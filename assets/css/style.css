@@ -1,0 +1,212 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes title {
+    0% {
+        margin-left: -1000px;
+    }
+    100% {
+        margin-left: 0px;
+    }
+}
+
+body {
+    font-family: 'TT Norms Pro';
+}
+
+.area1 {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: linear-gradient(to top right, #6be5db, #fff0e1);
+}
+
+/* LOGO DO SITE */
+
+.area1 .logo {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    animation-name: title;
+    animation-duration: 1s;
+    
+}
+.area1 .logo img {
+    width: 40px;
+}
+.area1 .logo .logo-text {
+    font-size: 18px;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    
+}
+
+.left-area1 {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex: 1;
+    animation-name: title;
+    animation-duration: 1.5s;
+}
+
+.left-area1 .opts h1 {
+    font-size: 80px;
+    line-height: 76px;
+    font-weight: normal;
+    padding-bottom: 60px;
+}
+
+.left-area1 .opts .links a{
+    text-align: center;
+    text-decoration: none;
+    background-color: black;
+    font-size: 16px;
+    height: 40px;
+    width: 150px;
+    color: #fff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+.left-area1 .opts .links a:hover {
+    background-color: white;
+    color: black;
+    transition: all 0.4s;
+    border: 1px solid black;
+}
+.right-area1 {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.right-area1 img {
+    width: 500px;
+    height: 500px;
+}
+
+/* Tecnologia nova */
+
+.container-area2 {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-image: linear-gradient(to bottom right, #6be5db, #fff0e1);
+}
+.container-area2 .left-area2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-area2 .left-area2 h1 {
+    font-size: 70px;
+    padding-bottom: 40px;
+    font-weight: normal;
+}
+.container-area2 .left-area2 p {
+    text-align: center;
+    line-height: 22px;
+    width: 400px;
+    font-size: 16px;
+}
+.container-area2 .right-area2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-area2 .right-area2 img {
+    width: 450px;
+}
+/* COMPRE TUDOo */
+
+.container-area3 {
+    height: 100vh;
+    background-image: linear-gradient(to top right, #6be5db, #fff0e1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container-area3 .title h1 {
+    font-size: 70px;
+    font-weight: normal;
+    padding-bottom: 50px;
+}
+.container-area3 .grid-pai {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+    padding-bottom: 50px;
+}
+.container-area3 .grid-pai .grid-filho:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    transition: all 0.7s;
+    transform: scale(1.2);
+}
+
+.container-area3 .grid-pai .grid-filho {
+    height: 300px;
+    width: 200px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    box-shadow: 1px 1px 10px black;
+}
+.container-area3 .grid-pai .grid-filho img {
+    width: 150px;
+    border-top-right-radius: 40px;
+}
+.container-area3 .grid-pai .grid-filho h2 {
+    width: 150px;
+    text-align: center;
+    font-size: 16px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+.container-area3 .grid-pai .grid-filho p {
+    width: 170px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.container-area3 a {
+    text-align: center;
+    text-decoration: none;
+    background-color: black;
+    font-size: 16px;
+    height: 40px;
+    width: 150px;
+    color: #fff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+.container-area3 a:hover {
+    background-color: white;
+    color: black;
+    transition: all 0.4s;
+    border: 1px solid black;
+}
